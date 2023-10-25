@@ -15,8 +15,8 @@ public class CloudServicePlatform {
     // More Methods
 }
 
-//Open-Closed: La clase CloudServicePlatform necesitaría ser extendida en case de haber más bases de datos relacionales
-Solución
+//Open-Closed: La clase CloudServicePlatform necesitaría ser extendida en case de haber más bases de datos relacionales.
+//Solución: De esta forma cada vez que se requiera de una nueva base de datos relacional solamente hay que agregar una nueva clase.
 public interface hostingTo {
     void hostingTo () {}
 }
