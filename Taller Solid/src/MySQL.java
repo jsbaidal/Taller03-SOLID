@@ -6,3 +6,7 @@ public class MySQL {
     // More Methods
 }
 
+// Single Responsibility: La clase se encarga de demasiadas cosas
+// Solución
+
+    public class insert(String statement){}
