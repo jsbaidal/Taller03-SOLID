@@ -22,28 +22,35 @@ public interface hostingTo {
 }
 
 public class CloudServicePlatform{
-    protected int cloudServicePlatform;
-    public CloudServicePlatform (hostingTo host) {
+    protected hostingTo hostingTo;
+    protected Appweb app;
 
+    public CloudServicePlatform (hostingTo hostingTo, Appweb app) {
+        this.hostingTo = hostingTo;
+        this.app = app;
+    }
+
+    public void hosting () {
+        this.hostingTo.hostingTo(this.app);
     }
 }
 
 public class ConnectToAWS implements hostingTo {
-    public void hostingTo () {
+    public void hostingTo (AppWeb app) {
         System.out.println("Connect to AWS");
         // Logic
     }
 }
 
 public class ConnectToMicrosoftAzure implements hostingTo {
-    public void hostingTo () {
+    public void hostingTo (AppWeb app) {
         System.out.println("Connect to Microsoft Azure");
         // Logic
     }
 }
 
 public class ConnectToGoogleCloud implements hostingTo {
-    public void hostingTo () {
+    public void hostingTo (AppWeb app) {
         System.out.println("Connect to Google Cloud");
         // Logic
     }
