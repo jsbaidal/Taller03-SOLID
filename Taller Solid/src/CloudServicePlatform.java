@@ -21,17 +21,9 @@ public interface hostingTo {
     void hostingTo () {}
 }
 
-public class CloudServicePlatform{
-    protected hostingTo hostingTo;
-    protected Appweb app;
-
-    public CloudServicePlatform (hostingTo hostingTo, Appweb app) {
-        this.hostingTo = hostingTo;
-        this.app = app;
-    }
-
-    public void hosting () {
-        this.hostingTo.hostingTo(this.app);
+public class CloudServicePlatform {
+    public static void hosting (hostingTo hostingTo, Appweb app) {
+        hostingTo.hostingTo(app);
     }
 }
 
